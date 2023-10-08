@@ -29,12 +29,15 @@ public class StockFileReader {
 	        return br.readLine();
 	    }
 	}
-	/**
-	 * Complete the body of this method.
-	 * @return List
-	 * @throws IOException
-	 */
+
 	public List<String> readFileData() throws IOException{
+		/*
+			lines:
+			[
+				"142.440002,142.679993,141.850006,142.270004,17245200,142.270004",
+				"141.220001,142.919998,141.160004,142.440002,23251100,142.440002"
+			]
+		 */
 		List<String> lines = new ArrayList<String>();
 		// Insert your code here..
 	    return lines;
