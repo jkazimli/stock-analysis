@@ -38,8 +38,16 @@ public class StockFileReader {
 				"141.220001,142.919998,141.160004,142.440002,23251100,142.440002"
 			]
 		 */
-		List<String> lines = new ArrayList<String>();
-		// Insert your code here..
+		List<String> lines = new ArrayList<>();
+
+		BufferedReader br = new BufferedReader(new FileReader(filePath));
+
+		br.readLine();
+		String line;
+		while ((line = br.readLine()) != null) {
+			lines.add(line);
+		}
+
 	    return lines;
 	}
 	
